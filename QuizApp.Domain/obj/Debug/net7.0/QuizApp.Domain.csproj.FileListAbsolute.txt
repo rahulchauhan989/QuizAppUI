@@ -12,3 +12,17 @@ R:\QuizAppWithUI-master\QuizApp.Domain\obj\Debug\net7.0\refint\QuizApp.Domain.dl
 R:\QuizAppWithUI-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.pdb
 R:\QuizAppWithUI-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.genruntimeconfig.cache
 R:\QuizAppWithUI-master\QuizApp.Domain\obj\Debug\net7.0\ref\QuizApp.Domain.dll
+d:\Quiiz-master\QuizApp.Domain\bin\Debug\net7.0\QuizApp.Domain.deps.json
+d:\Quiiz-master\QuizApp.Domain\bin\Debug\net7.0\QuizApp.Domain.runtimeconfig.json
+D:\Quiiz-master\QuizApp.Domain\bin\Debug\net7.0\QuizApp.Domain.dll
+D:\Quiiz-master\QuizApp.Domain\bin\Debug\net7.0\QuizApp.Domain.pdb
+D:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.csproj.AssemblyReference.cache
+D:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.AssemblyInfoInputs.cache
+D:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.AssemblyInfo.cs
+D:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.csproj.CoreCompileInputs.cache
+D:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.dll
+D:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\refint\QuizApp.Domain.dll
+D:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.pdb
+d:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\QuizApp.Domain.genruntimeconfig.cache
+d:\Quiiz-master\QuizApp.Domain\obj\Debug\net7.0\ref\QuizApp.Domain.dll

@@ -693,7 +693,6 @@ function saveQuiz() {
 }
 
 function openQuizModal(action, quizId) {
-  debugger
   if (action === 'edit') {
     $.ajax({
       url: `/Quiz/GetQuizForEdit?id=${quizId}`,
@@ -704,14 +703,36 @@ function openQuizModal(action, quizId) {
 
           $('#quizTitle').val(quiz.title);
           $('#quizDescription').val(quiz.description);
-          $('#quizCategory').val(quiz.categoryid);
           $('#quizTimeLimit').val(quiz.durationminutes);
           $('#quizTotalMarks').val(quiz.totalmarks); 
           $('#quizPublished').prop('checked', quiz.ispublic);
 
+          $.ajax({
+            url: '/Category/GetAllCategories',
+            type: 'GET',
+            success: function (categoryResponse) {
+              if (categoryResponse.success) {
+                const categoryDropdown = $('#quizCategory');
+                categoryDropdown.empty();
+                categoryDropdown.append('<option value="">Select Category</option>');
+
+                categoryResponse.data.forEach(category => {
+                  const isSelected = category.id === quiz.categoryid ? 'selected' : '';
+                  categoryDropdown.append(`<option value="${category.id}" ${isSelected}>${category.name}</option>`);
+                });
+              } else {
+                toastr.warning(categoryResponse.message || "Failed to fetch categories.");
+              }
+            },
+            error: function (error) {
+              console.error("Error fetching categories:", error);
+              toastr.error("An error occurred while fetching categories.");
+            }
+          });
+
           $('#quizModalTitle').text("Edit Quiz");
-          console.log("Opening modal with quiz data:", quiz); 
-          $('#quizModal').modal('show'); 
+          console.log("Opening modal with quiz data:", quiz);
+          $('#quizModal').modal('show');
 
           $('#saveQuizButton').off('click').on('click', function () {
             updateQuiz(quizId);
@@ -728,7 +749,6 @@ function openQuizModal(action, quizId) {
   }
 }
 
-
 function updateQuiz(quizId) {
   const quizData = {
     id: quizId,
@@ -736,10 +756,11 @@ function updateQuiz(quizId) {
     description: $('#quizDescription').val().trim(),
     categoryid: $('#quizCategory').val(),
     durationminutes: parseInt($('#quizTimeLimit').val()),
+    totalmarks: parseInt($('#quizTotalMarks').val()), 
     ispublic: $('#quizPublished').is(':checked')
   };
 
-  if (!quizData.title || !quizData.description || !quizData.categoryid || !quizData.durationminutes) {
+  if (!quizData.title || !quizData.description || !quizData.categoryid || !quizData.durationminutes || !quizData.totalmarks) {
     toastr.warning("Please fill in all required fields.");
     return;
   }
@@ -764,6 +785,9 @@ function updateQuiz(quizId) {
     }
   });
 }
+
+
+
 
 
 function deleteQuiz(quizId) {

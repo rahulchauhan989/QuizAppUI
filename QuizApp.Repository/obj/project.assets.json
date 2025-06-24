@@ -7095,11 +7095,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj",
+      "projectUniqueName": "d:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj",
       "projectName": "QuizApp.Repository",
-      "projectPath": "D:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj",
+      "projectPath": "d:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj",
       "packagesPath": "C:\\Users\\pca88\\.nuget\\packages\\",
-      "outputPath": "D:\\Quiiz-master\\QuizApp.Repository\\obj\\",
+      "outputPath": "d:\\Quiiz-master\\QuizApp.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pca88\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7114,8 +7114,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {
-              "projectPath": "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj"
+            "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {
+              "projectPath": "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj"
             }
           }
         }
