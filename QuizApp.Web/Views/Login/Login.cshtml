@@ -1,0 +1,69 @@
+@{
+    Layout = null;
+}
+
+@using QuizApp.Domain.Dto
+@model LoginModel
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+<partial name="_Toasters.cshtml" />
+
+
+
+<!-- Main Container -->
+<div class="container-fluid d-flex align-items-center justify-content-center full-height">
+    <div class="login-card bg-white">
+        <h3 class="text-center text-primary mb-4">Login to Your Account</h3>
+
+        <form asp-action="Login" asp-controller="Login" method="post">
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" asp-for="Email" class="form-control" placeholder="Enter email" />
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" asp-for="password" class="form-control" id="password"
+                    placeholder="Enter password" />
+                <i class="far fa-eye toggle-icon" id="togglePassword"></i>
+                <span class="text-danger" asp-validation-for="password"></span>
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" asp-for="RememberMe" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+                <span class="text-danger" asp-validation-for="RememberMe"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
+        <div class="register-link">
+            <p>Don't have an account? <a asp-action="Registration" asp-controller="Login">Register</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Toggle Password Script -->
+<script>
+    $(document).ready(function () {
+        $('#togglePassword').on('click', function () {
+            const passwordField = $('#password');
+            const type = passwordField.attr('type') === 'password' ? 'text' : 'password';
+            passwordField.attr('type', type);
+            $(this).toggleClass('fa-eye-slash');
+        });
+    });
+</script>

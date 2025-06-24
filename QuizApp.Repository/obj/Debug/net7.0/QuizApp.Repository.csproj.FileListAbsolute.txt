@@ -1,0 +1,15 @@
+R:\QuizAppWithUI-master\QuizApp.Repository\bin\Debug\net7.0\QuizApp.Repository.deps.json
+R:\QuizAppWithUI-master\QuizApp.Repository\bin\Debug\net7.0\QuizApp.Repository.dll
+R:\QuizAppWithUI-master\QuizApp.Repository\bin\Debug\net7.0\QuizApp.Repository.pdb
+R:\QuizAppWithUI-master\QuizApp.Repository\bin\Debug\net7.0\QuizApp.Domain.dll
+R:\QuizAppWithUI-master\QuizApp.Repository\bin\Debug\net7.0\QuizApp.Domain.pdb
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\QuizApp.Repository.csproj.AssemblyReference.cache
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\QuizApp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\QuizApp.Repository.AssemblyInfoInputs.cache
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\QuizApp.Repository.AssemblyInfo.cs
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\QuizApp.Repository.csproj.CoreCompileInputs.cache
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\QuizApp..5375DD99.Up2Date
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\QuizApp.Repository.dll
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\refint\QuizApp.Repository.dll
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\QuizApp.Repository.pdb
+R:\QuizAppWithUI-master\QuizApp.Repository\obj\Debug\net7.0\ref\QuizApp.Repository.dll

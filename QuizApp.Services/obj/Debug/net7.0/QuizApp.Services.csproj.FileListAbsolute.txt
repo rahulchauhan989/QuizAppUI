@@ -1,0 +1,17 @@
+R:\QuizAppWithUI-master\QuizApp.Services\bin\Debug\net7.0\QuizApp.Services.deps.json
+R:\QuizAppWithUI-master\QuizApp.Services\bin\Debug\net7.0\QuizApp.Services.dll
+R:\QuizAppWithUI-master\QuizApp.Services\bin\Debug\net7.0\QuizApp.Services.pdb
+R:\QuizAppWithUI-master\QuizApp.Services\bin\Debug\net7.0\QuizApp.Domain.dll
+R:\QuizAppWithUI-master\QuizApp.Services\bin\Debug\net7.0\QuizApp.Repository.dll
+R:\QuizAppWithUI-master\QuizApp.Services\bin\Debug\net7.0\QuizApp.Domain.pdb
+R:\QuizAppWithUI-master\QuizApp.Services\bin\Debug\net7.0\QuizApp.Repository.pdb
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\QuizApp.Services.csproj.AssemblyReference.cache
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\QuizApp.Services.GeneratedMSBuildEditorConfig.editorconfig
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\QuizApp.Services.AssemblyInfoInputs.cache
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\QuizApp.Services.AssemblyInfo.cs
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\QuizApp.Services.csproj.CoreCompileInputs.cache
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\QuizApp..86655B75.Up2Date
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\QuizApp.Services.dll
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\refint\QuizApp.Services.dll
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\QuizApp.Services.pdb
+R:\QuizAppWithUI-master\QuizApp.Services\obj\Debug\net7.0\ref\QuizApp.Services.dll

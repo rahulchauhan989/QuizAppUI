@@ -1,0 +1,82 @@
+@using QuizApp.Domain.Dto
+@model RegistrationDto
+
+@{
+    Layout = null;
+}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<link rel="stylesheet" href="~/css/registration.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+
+<div class="container bg-color">
+    <br>
+    <p class="text-center">Welcome To the Our Platform <a href="http://bootstrap-ecommerce.com/"> Booking.com</a></p>
+    <hr>
+    <div class="card bg-color">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+            <h4 class="card-title mt-3 text-center">Create Account</h4>
+            <p class="text-center">Get started with your free account</p>
+
+            <form asp-action="Registration" asp-controller="Login" method="post">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input name="Name" class="form-control" asp-for="Name" placeholder="Full name" type="text" required>
+
+                </div>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                    </div>
+                    <input name="Email" class="form-control" asp-for="Email" placeholder="Email address" type="email"
+                        required>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input name="Password" class="form-control" asp-for="password" placeholder="Create password"
+                        type="password" required>
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input name="ConfirmPassword" class="form-control" asp-for="ConfirmPassword"
+                        placeholder="Repeat password" type="password" required>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
+                </div>
+            </form>
+
+            <p class="text-center">Have an account? <a asp-action="Login" asp-controller="Login">Log In</a> </p>
+
+        </article>
+    </div>
+
+</div>
+
+<br><br>
+<article class="bg-secondary mb-3">
+    <div class="card-body text-center">
+        <h3 class="text-white mt-3">Quiz App</h3>
+        <p class="h5 text-white">Gives You <br> best Experience
+            and Trust</p> <br>
+        <p><a class="btn btn-warning" target="_blank" href="#"> QuizApp.com
+                <i class="fa fa-window-restore "></i></a></p>
+    </div>
+    <br><br>
+</article>
