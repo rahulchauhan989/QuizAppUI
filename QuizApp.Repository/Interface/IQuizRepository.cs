@@ -12,14 +12,18 @@ public interface IQuizRepository
 
     Task<int> GetPublishedQuizzesAsync();
 
+    Task<IEnumerable<Quiz>> GetPublishedQuizzes();
+
+
     Task AddQuestionToQuizAsync(Quiz quiz, Question question);
-   Task<List<QuizListDto>> GetAllQuizzesAsync();
+    Task<List<QuizListDto>> GetAllQuizzesAsync();
     Task<List<Question>> GetAllQuestionsAsync();
     Task<IEnumerable<Question>> GetRandomQuestionsAsync(int Categoryid, int count);
 
     Task<bool> IsQuizExistsAsync(int quizId);
 
     Task<IEnumerable<Question>> GetRandomQuestionsByQuizIdAsync(int quizId, int count);
+    Task<IEnumerable<Question>> GetRandomQuestionsByQuizIdAsync(int quizId);
 
     Task<IEnumerable<Question>> GetQuestionsByQuizIdAsync(int quizId);
 

@@ -13,5 +13,7 @@ public class QuizDto
     public int Categoryid { get; set; }
     public int Createdby { get; set; }
 
+    public string? CategoryName {get;set;}
+
     public List<QuestionDto>? Questions { get; set; }
 }

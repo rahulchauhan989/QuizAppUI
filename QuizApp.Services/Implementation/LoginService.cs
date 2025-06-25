@@ -111,7 +111,7 @@ public class LoginService : ILoginService
             Email = request.Email,
             Passwordhash = hashedPassword,
             Role = "User",
-            Isactive= false,
+            Isactive = false,
             Createdat = DateTime.UtcNow
         };
 
@@ -153,5 +153,47 @@ public class LoginService : ILoginService
             Email = user.Email,
             Role = user.Role
         };
+    }
+
+
+    public async Task<int> GetUserIdFromToken(string token)
+    {
+        if (string.IsNullOrEmpty(token))
+            throw new ArgumentException("Token cannot be null or empty.", nameof(token));
+
+        var handler = new JwtSecurityTokenHandler();
+        JwtSecurityToken jwtToken;
+
+        try
+        {
+            jwtToken = handler.ReadJwtToken(token);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Invalid token format.", ex);
+        }
+
+        var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+        if (userIdClaim == null)
+            throw new Exception("UserId claim not found in token.");
+
+        if (!int.TryParse(userIdClaim.Value, out int userId))
+            throw new Exception("UserId claim is not a valid integer.");
+
+        return userId;
+    }
+    public string GetUserRoleFromToken(string token)
+    {
+        if (string.IsNullOrEmpty(token))
+            throw new ArgumentException("Token cannot be null or empty.", nameof(token));
+
+        var handler = new JwtSecurityTokenHandler();
+        var jwtToken = handler.ReadJwtToken(token);
+
+        var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role);
+        if (roleClaim == null)
+            throw new Exception("Role claim not found in token.");
+
+        return roleClaim.Value;
     }
 }

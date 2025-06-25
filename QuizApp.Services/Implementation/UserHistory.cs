@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Logging;
+using QuizApp.Domain.DataModels;
 using QuizApp.Domain.Dto;
 using QuizApp.Repository.Interface;
 using QuizApp.Services.Interface;
@@ -65,5 +66,9 @@ public class UserHistory : IUserHistory
             return ValidationResult.Failure("No quiz history found for the user.");
 
         return ValidationResult.Success();
+    }
+
+    public async Task<IEnumerable<User>> GetAllUser(){
+        return await _attemptRepo.getAllUser();
     }
 }

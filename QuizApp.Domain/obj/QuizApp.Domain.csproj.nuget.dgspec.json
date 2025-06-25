@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {}
+    "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {
+    "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj",
+        "projectUniqueName": "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj",
         "projectName": "QuizApp.Domain",
-        "projectPath": "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj",
+        "projectPath": "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj",
         "packagesPath": "C:\\Users\\pca88\\.nuget\\packages\\",
-        "outputPath": "D:\\Quiiz-master\\QuizApp.Domain\\obj\\",
+        "outputPath": "d:\\Quiiz-master\\QuizApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pca88\\AppData\\Roaming\\NuGet\\NuGet.Config"

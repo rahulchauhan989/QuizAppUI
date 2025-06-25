@@ -32,10 +32,18 @@ public class QuizRepository : IQuizRepository
     {
         return await _context.Quizzes.CountAsync(q => q.Isdeleted == false && q.Ispublic == true);
     }
+
+    public async Task<IEnumerable<Quiz>> GetPublishedQuizzes()
+    {
+        return await _context.Quizzes
+            .Where(q => q.Ispublic == true && (q.Isdeleted == null || q.Isdeleted == false))
+            .Include(q => q.Category)
+            .ToListAsync();
+    }
     public async Task<List<QuizListDto>> GetAllQuizzesAsync()
     {
         var quizzes = await (from quiz in _context.Quizzes
-                             where quiz.Isdeleted==false
+                             where quiz.Isdeleted == false
                              join category in _context.Categories on quiz.CategoryId equals category.CategoryId
                              join quizQuestion in _context.Quizquestions on quiz.Id equals quizQuestion.QuizId into quizQuestionsGroup
                              select new QuizListDto
@@ -102,6 +110,17 @@ public class QuizRepository : IQuizRepository
             .Include(q => q.Options)
             .OrderBy(q => EF.Functions.Random())
             .Take(count)
+            .ToListAsync();
+    }
+
+    public async Task<IEnumerable<Question>> GetRandomQuestionsByQuizIdAsync(int quizId)
+    {
+        return await _context.Questions
+            .Where(q => _context.Quizquestions
+                .Where(qq => qq.QuizId == quizId)
+                .Select(qq => qq.QuestionId)
+                .Contains(q.QuestionId))
+            .Include(q => q.Options)
             .ToListAsync();
     }
 

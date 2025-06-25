@@ -8312,11 +8312,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Quiiz-master\\QuizApp.Web\\QuizApp.Web.csproj",
+      "projectUniqueName": "d:\\Quiiz-master\\QuizApp.Web\\QuizApp.Web.csproj",
       "projectName": "QuizApp.Web",
-      "projectPath": "D:\\Quiiz-master\\QuizApp.Web\\QuizApp.Web.csproj",
+      "projectPath": "d:\\Quiiz-master\\QuizApp.Web\\QuizApp.Web.csproj",
       "packagesPath": "C:\\Users\\pca88\\.nuget\\packages\\",
-      "outputPath": "D:\\Quiiz-master\\QuizApp.Web\\obj\\",
+      "outputPath": "d:\\Quiiz-master\\QuizApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pca88\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8331,11 +8331,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {
-              "projectPath": "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj"
+            "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {
+              "projectPath": "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj"
             },
-            "d:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj": {
-              "projectPath": "d:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj"
+            "D:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj": {
+              "projectPath": "D:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj"
             },
             "d:\\Quiiz-master\\QuizApp.Services\\QuizApp.Services.csproj": {
               "projectPath": "d:\\Quiiz-master\\QuizApp.Services\\QuizApp.Services.csproj"

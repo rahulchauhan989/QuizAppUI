@@ -10,6 +10,8 @@ public interface IQuizService
     Task<int> GetTotalQuizzesAsync();
     Task<List<QuizListDto>> GetAllQuizzesAsync();
     Task<int> GetPublishedQuizzesAsync();
+ Task<IEnumerable<QuizDto>> GetPublishedQuizzes();
+
     Task<QuizDto> CreateQuizFromExistingQuestionsAsync(CreateQuizFromExistingQuestionsDto dto);
     Task<ValidationResult> ValidateQuizFromExistingQuestions(CreateQuizFromExistingQuestionsDto dto);
     Task<IEnumerable<ActiveQuiz>> GetActiveQuizzesAsync();

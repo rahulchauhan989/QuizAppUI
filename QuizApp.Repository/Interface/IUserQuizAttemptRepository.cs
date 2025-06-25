@@ -16,4 +16,6 @@ public interface IUserQuizAttemptRepository
     Task<bool> IsUserExistAsync(int userId);
 
     Task<IEnumerable<Userquizattempt>> GetAttemptsByCategoryIdAsync(int categoryId);
+
+    Task<IEnumerable<User>> getAllUser();
 }

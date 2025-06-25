@@ -111,8 +111,8 @@ D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\appsettings.Development.json
 D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\appsettings.json
 D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\QuizApp.Web.staticwebassets.runtime.json
 D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\QuizApp.Web.exe
-d:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\QuizApp.Web.deps.json
-d:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\QuizApp.Web.runtimeconfig.json
+D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\QuizApp.Web.deps.json
+D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\QuizApp.Web.runtimeconfig.json
 D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\QuizApp.Web.dll
 D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\QuizApp.Web.pdb
 D:\Quiiz-master\QuizApp.Web\bin\Debug\net7.0\Azure.Core.dll
@@ -210,9 +210,9 @@ D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\staticwebassets.development.json
 D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\scopedcss\bundle\QuizApp.Web.styles.css
 D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\scopedcss\projectbundle\QuizApp.Web.bundle.scp.css
-d:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\QuizApp.Web.csproj.CopyComplete
+D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\QuizApp.Web.csproj.CopyComplete
 D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\QuizApp.Web.dll
 D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\refint\QuizApp.Web.dll
 D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\QuizApp.Web.pdb
-d:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\QuizApp.Web.genruntimeconfig.cache
-d:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\ref\QuizApp.Web.dll
+D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\QuizApp.Web.genruntimeconfig.cache
+D:\Quiiz-master\QuizApp.Web\obj\Debug\net7.0\ref\QuizApp.Web.dll

@@ -267,6 +267,26 @@ public class QuestionServices : IQuestionServices
         }).ToList();
     }
 
+    public async Task<List<QuestionDto>> GetRandomQuestionsByQuizIdAsync(int quizId)
+    {
+        var questions = await _quizRepository.GetRandomQuestionsByQuizIdAsync(quizId);
+
+        return questions.Select(q => new QuestionDto
+        {
+            Id = q.QuestionId,
+            Categoryid = q.CategoryId,
+            Text = q.Text,
+            Marks = q.Marks,
+            Difficulty = q.Difficulty,
+            Options = q.Options.Select(o => new OptionDto
+            {
+                Id = o.Id,
+                Text = o.Text,
+                IsCorrect = o.Iscorrect
+            }).ToList()
+        }).ToList();
+    }
+
     public async Task<bool> IsQuizExistsAsync(int quizId)
     {
         return await _quizRepository.IsQuizExistsAsync(quizId);
@@ -301,7 +321,7 @@ public class QuestionServices : IQuestionServices
         // string token = _httpContextAccessor.HttpContext?.Request.Headers["Authorization"].ToString().Replace("Bearer ", "")!;
         // int userId = _loginService.ExtractUserIdFromToken(token);
 
-        int userId=1;
+        int userId = 1;
 
         var question = await _quizRepository.GetQuestionByIdAsync(dto.Id);
         if (question == null || question.Isdeleted == true)

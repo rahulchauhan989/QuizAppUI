@@ -1,3 +1,5 @@
+using Azure.Core;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using quiz.Domain.Dto;
 using QuizApp.Domain.DataModels;
@@ -10,17 +12,21 @@ namespace QuizApp.Services.Implementation;
 public class QuizesSubmission : IQuizesSubmission
 {
     private readonly IQuizRepository _quizRepository;
-    private readonly ILogger<QuizesSubmission> _logger;
+    private readonly ILoginService _loginservice;
+
+    private readonly ILogger _logger;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
     private readonly IUserQuizAttemptRepository _attemptRepo;
 
     private readonly IUserAnswerRepository _answerRepo;
-    public QuizesSubmission(IQuizRepository quizRepository, ILogger<QuizesSubmission> logger, IUserQuizAttemptRepository attemptRepo, IUserAnswerRepository answerRepo)
+    public QuizesSubmission(IQuizRepository quizRepository, ILogger<QuizesSubmission> logger, IUserQuizAttemptRepository attemptRepo, IUserAnswerRepository answerRepo, ILoginService loginService, IHttpContextAccessor httpContextAccessor)
     {
         _attemptRepo = attemptRepo;
         _answerRepo = answerRepo;
         _quizRepository = quizRepository;
         _logger = logger;
+        _httpContextAccessor = httpContextAccessor;
     }
 
     public async Task<CreateQuizzDto> GetQuizByIdAsync(int quizId)
@@ -69,6 +75,7 @@ public class QuizesSubmission : IQuizesSubmission
 
     public async Task<int> StartQuizAsync(int userId, int quizId, int categoryId)
     {
+        
         var attemptId = await _attemptRepo.CreateAttemptAsync(new Userquizattempt
         {
             UserId = userId,

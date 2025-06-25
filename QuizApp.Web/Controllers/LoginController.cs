@@ -44,7 +44,7 @@ public class LoginController : Controller
                 Expires = DateTimeOffset.UtcNow.AddHours(1)
             });
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Dashboard", "Admin");
         }
         catch (Exception ex)
         {
@@ -123,7 +123,14 @@ public class LoginController : Controller
     }
 
     [HttpGet]
-    public IActionResult PageNotFond(){
+    public IActionResult PageNotFond()
+    {
+        return View();
+    }
+
+    [HttpGet]
+    public IActionResult AccessDenied()
+    {
         return View();
     }
 }

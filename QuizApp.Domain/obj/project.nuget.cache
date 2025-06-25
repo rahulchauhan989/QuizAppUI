@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nl7f9Kd5wWUs52vgYGSdYdxEKT3COT1u0BkNcp+96GySR9BNHc+2UZSQ8+JPhz8WF6kyInhKRsAJyGKIilWebg==",
+  "dgSpecHash": "QUjiuUjNzG8KMt1Q9quav1NSCgGJ3N41J8ExTX+6cflAVC8KR9oIM50LHdlSWFm7AD2F9gy370QOZPsGj10byQ==",
   "success": true,
-  "projectFilePath": "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj",
+  "projectFilePath": "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pca88\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\pca88\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

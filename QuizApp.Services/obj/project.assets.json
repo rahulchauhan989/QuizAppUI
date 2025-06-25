@@ -8080,11 +8080,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {
-              "projectPath": "D:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj"
+            "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj": {
+              "projectPath": "d:\\Quiiz-master\\QuizApp.Domain\\QuizApp.Domain.csproj"
             },
-            "d:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj": {
-              "projectPath": "d:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj"
+            "D:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj": {
+              "projectPath": "D:\\Quiiz-master\\QuizApp.Repository\\QuizApp.Repository.csproj"
             }
           }
         }

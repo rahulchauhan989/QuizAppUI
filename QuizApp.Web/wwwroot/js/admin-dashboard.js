@@ -1,27 +1,18 @@
 let currentTab = "overview";
 document.addEventListener("DOMContentLoaded", () => {
   showTab("overview");
-  setupEventListeners();
   fetchTotalCategories();
 });
 
-function setupEventListeners() {
-  // Search 
-  document
-    .getElementById("categorySearch")
-    ?.addEventListener("input", filterCategories);
-  document
-    .getElementById("questionSearch")
-    ?.addEventListener("input", filterQuestions);
-  document
-    .getElementById("quizSearch")
-    ?.addEventListener("input", filterQuizzes);
-}
-
 function showTab(tabName) {
+  debugger
   document.querySelectorAll(".tab-content").forEach((tab) => {
     tab.classList.remove("active");
   });
+
+  if(tabName =="userQuizHistory"){
+    fetchUserList();
+  }
 
   document.getElementById(tabName + "-tab").classList.add("active");
 
@@ -30,7 +21,7 @@ function showTab(tabName) {
   });
 
   document
-    .querySelector(`.sidebar .nav-link[href="#${tabName}-tab"]`)
+    .querySelector(`.sidebar .nav-link[href="#${tabName}"]`)
     .classList.add("active");
   currentTab = tabName;
 }
@@ -68,6 +59,14 @@ $(document).ready(function () {
   $('#questionModal').on('show.bs.modal', function () {
     populateCategoryDropdown();
   });
+
+  $('#saveQuizButton').off('click').on('click', function () {
+    updateQuiz(quizId);
+  });
+
+   $('#userQuizHistory').on('show.bs.tab', function () {
+    fetchUserList();
+});
 });
 
 
@@ -162,7 +161,7 @@ function populateCategoriesTable(categories) {
 
     const row = `
           <tr>
-              <td class="font-weight-bold">${category.name}</td>
+              <td >${category.name}</td>
               <td>${category.description}</td>
               <td>
                   <button class="btn btn-sm me-1" data-bs-toggle="modal" data-bs-target="#EditcategoryModal" onclick="openCategoryModal('edit', ${category.id})">
@@ -333,7 +332,7 @@ function populateQuestionsTable(questions) {
   questions.forEach(question => {
     const row = `
           <tr>
-              <td class="font-weight-bold">${question.text}</td>
+              <td >${question.text}</td>
               <td>${question.categoryName}</td>
               <td><span class="badge bg-info">${question.difficulty}</span></td>
               <td>${question.marks}</td>
@@ -578,48 +577,17 @@ function fetchQuizzes() {
   });
 }
 
-function populateQuizzesTable(quizzes) {
-  const tableBody = $('#quizzesTable tbody');
-  tableBody.empty();
 
-  quizzes.forEach(quiz => {
-    const isPublished = quiz.isPublic ? 'checked' : '';
-    const row = `
-          <tr>
-              <td>
-                  <div class="font-weight-bold">${quiz.title}</div>
-              </td>
-              <td>${quiz.categoryName}</td>
-              <td>${quiz.totalQuestions}</td>
-              <td>${quiz.durationMinutes} min</td>
-              <td>
-                  <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" ${isPublished} onclick="togglePublish(${quiz.id}, this.checked)">
-                  </div>
-              </td>
-              <td>
-                  <button class="btn btn-sm me-1" onclick="openQuizModal('edit', ${quiz.id})">
-                      <i class="fas fa-edit"></i>
-                  </button>
-                  <button class="btn btn-sm" onclick="deleteQuiz(${quiz.id})">
-                      <i class="fas fa-trash"></i>
-                  </button>
-              </td>
-          </tr>
-      `;
-    tableBody.append(row);
-  });
-}
 
 
 function togglePublish(quizId, isPublished) {
-  const url = isPublished ? `/Quiz/${quizId}/publish` : `/Quiz/${quizId}/unpublish`;
+  const url = isPublished ? `/Quiz/PublishQuiz?id=${quizId}` : `/Quiz/UnpublishQuiz?id=${quizId}`;
 
   $.ajax({
     url: url,
     type: 'PUT',
     success: function (response) {
-      if (response.success) {
+      if (response.isSuccess) {
         toastr.success(response.message || "Quiz status updated successfully.");
         fetchQuizzes();
       } else {
@@ -658,37 +626,37 @@ function populateQuizCategoryDropdown() {
 
 function saveQuiz() {
   const quizData = {
-      title: $('#quizTitle').val().trim(),
-      description: $('#quizDescription').val().trim(),
-      categoryid: $('#quizCategory').val(),
-      durationminutes: parseInt($('#quizTimeLimit').val()),
-      totalmarks: parseInt($('#quizTotalMarks').val()), 
-      ispublic: $('#quizPublished').is(':checked')
+    title: $('#quizTitle').val().trim(),
+    description: $('#quizDescription').val().trim(),
+    categoryid: $('#quizCategory').val(),
+    durationminutes: parseInt($('#quizTimeLimit').val()),
+    totalmarks: parseInt($('#quizTotalMarks').val()),
+    ispublic: $('#quizPublished').is(':checked')
   };
 
   if (!quizData.title || !quizData.description || !quizData.categoryid || !quizData.durationminutes || !quizData.totalmarks) {
-      toastr.warning("Please fill in all required fields.");
-      return;
+    toastr.warning("Please fill in all required fields.");
+    return;
   }
 
   $.ajax({
-      url: '/Quiz/CreateQuizOnly',
-      type: 'POST',
-      contentType: 'application/json',
-      data: JSON.stringify(quizData),
-      success: function (response) {
-          if (response.isSuccess) {
-              toastr.success(response.message || "Quiz created successfully.");
-              $('#quizModal').modal('hide');
-              fetchQuizzes();
-          } else {
-              toastr.error(response.message || "Failed to create quiz.");
-          }
-      },
-      error: function (error) {
-          console.error("Error creating quiz:", error);
-          toastr.error("An error occurred while creating the quiz.");
+    url: '/Quiz/CreateQuizOnly',
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify(quizData),
+    success: function (response) {
+      if (response.isSuccess) {
+        toastr.success(response.message || "Quiz created successfully.");
+        $('#quizModal').modal('hide');
+        fetchQuizzes();
+      } else {
+        toastr.error(response.message || "Failed to create quiz.");
       }
+    },
+    error: function (error) {
+      console.error("Error creating quiz:", error);
+      toastr.error("An error occurred while creating the quiz.");
+    }
   });
 }
 
@@ -701,18 +669,18 @@ function openQuizModal(action, quizId) {
         if (response.isSuccess) {
           const quiz = response.data;
 
-          $('#quizTitle').val(quiz.title);
-          $('#quizDescription').val(quiz.description);
-          $('#quizTimeLimit').val(quiz.durationminutes);
-          $('#quizTotalMarks').val(quiz.totalmarks); 
-          $('#quizPublished').prop('checked', quiz.ispublic);
+          $('#EditquizTitle').val(quiz.title);
+          $('#EditquizDescription').val(quiz.description);
+          $('#EditquizTimeLimit').val(quiz.durationminutes);
+          $('#EditquizTotalMarks').val(quiz.totalmarks);
+          $('#EditquizPublished').prop('checked', quiz.ispublic);
 
           $.ajax({
             url: '/Category/GetAllCategories',
             type: 'GET',
             success: function (categoryResponse) {
               if (categoryResponse.success) {
-                const categoryDropdown = $('#quizCategory');
+                const categoryDropdown = $('#EditquizCategory');
                 categoryDropdown.empty();
                 categoryDropdown.append('<option value="">Select Category</option>');
 
@@ -730,9 +698,9 @@ function openQuizModal(action, quizId) {
             }
           });
 
-          $('#quizModalTitle').text("Edit Quiz");
+          $('#EditquizModalTitle').text("Edit Quiz");
           console.log("Opening modal with quiz data:", quiz);
-          $('#quizModal').modal('show');
+          $('#EditquizModal').modal('show');
 
           $('#saveQuizButton').off('click').on('click', function () {
             updateQuiz(quizId);
@@ -752,12 +720,12 @@ function openQuizModal(action, quizId) {
 function updateQuiz(quizId) {
   const quizData = {
     id: quizId,
-    title: $('#quizTitle').val().trim(),
-    description: $('#quizDescription').val().trim(),
-    categoryid: $('#quizCategory').val(),
-    durationminutes: parseInt($('#quizTimeLimit').val()),
-    totalmarks: parseInt($('#quizTotalMarks').val()), 
-    ispublic: $('#quizPublished').is(':checked')
+    title: $('#EditquizTitle').val().trim(),
+    description: $('#EditquizDescription').val().trim(),
+    categoryid: $('#EditquizCategory').val(),
+    durationminutes: parseInt($('#EditquizTimeLimit').val()),
+    totalmarks: parseInt($('#EditquizTotalMarks').val()),
+    ispublic: $('#EditquizPublished').is(':checked')
   };
 
   if (!quizData.title || !quizData.description || !quizData.categoryid || !quizData.durationminutes || !quizData.totalmarks) {
@@ -771,9 +739,9 @@ function updateQuiz(quizId) {
     contentType: 'application/json',
     data: JSON.stringify(quizData),
     success: function (response) {
-      if (response.success) {
+      if (response.isSuccess) {
         toastr.success(response.message || "Quiz updated successfully.");
-        $('#quizModal').modal('hide');
+        $('#EditquizModal').modal('hide');
         fetchQuizzes();
       } else {
         toastr.error(response.message || "Failed to update quiz.");
@@ -786,17 +754,13 @@ function updateQuiz(quizId) {
   });
 }
 
-
-
-
-
 function deleteQuiz(quizId) {
   if (confirm("Are you sure you want to delete this quiz?")) {
     $.ajax({
       url: `/Quiz/DeleteQuiz?id=${quizId}`,
       type: 'DELETE',
       success: function (response) {
-        if (response.success) {
+        if (response.isSuccess) {
           toastr.success(response.message || "Quiz deleted successfully.");
           fetchQuizzes();
         } else {
@@ -809,4 +773,202 @@ function deleteQuiz(quizId) {
       }
     });
   }
+}
+
+function openAddQuestionsModal(quizId) {
+  $('#addQuestionsModal').data('quizId', quizId);
+
+  $.ajax({
+    url: '/Question/GetAllQuestions',
+    type: 'GET',
+    success: function (response) {
+      if (response.success) {
+        const questionsDropdown = $('#quizQuestions');
+        questionsDropdown.empty();
+
+        response.data.forEach(question => {
+          questionsDropdown.append(`<option value="${question.id}">${question.text}</option>`);
+        });
+
+        $('#addQuestionsModal').modal('show');
+      } else {
+        toastr.warning(response.message || "Failed to fetch questions.");
+      }
+    },
+    error: function (error) {
+      console.error("Error fetching questions:", error);
+      toastr.error("An error occurred while fetching questions.");
+    }
+  });
+}
+
+function openRemoveQuestionsModal(quizId) {
+  debugger
+  $('#addQuestionsModal').data('quizId', quizId);
+
+  $.ajax({
+    url: `/Question/GetRandomQuestionByQuizIds?quizId=${quizId}`,
+    type: 'GET',
+    data: quizId,
+    success: function (response) {
+      if (response.isSuccess) {
+        const questionsDropdown = $('#quizQuestions');
+        questionsDropdown.empty();
+
+        response.data.forEach(question => {
+          questionsDropdown.append(`<option value="${question.id}">${question.text}</option>`);
+        });
+
+        $('#removeQuestionsModal').modal('show');
+      } else {
+        toastr.warning(response.message || "Failed to fetch questions.");
+      }
+    },
+    error: function (error) {
+      console.error("Error fetching questions:", error);
+      toastr.error("An error occurred while fetching questions.");
+    }
+  });
+}
+
+function addQuestionsToQuiz() {
+  const quizId = $('#addQuestionsModal').data('quizId');
+  const selectedQuestions = $('#quizQuestions').val();
+
+  if (!selectedQuestions || selectedQuestions.length === 0) {
+    toastr.warning("Please select at least one question.");
+    return;
+  }
+
+  const payload = {
+    QuizId: quizId,
+    ExistingQuestionIds: selectedQuestions.map(id => parseInt(id))
+  };
+
+  $.ajax({
+    url: '/Quiz/AddQuestionsToQuiz',
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify(payload),
+    success: function (response) {
+      if (response.isSuccess) {
+        toastr.success(response.message || "Questions added to quiz successfully.");
+        $('#addQuestionsModal').modal('hide');
+        fetchQuizzes();
+      } else {
+        toastr.error(response.message || "Failed to add questions to quiz.");
+      }
+    },
+    error: function (error) {
+      console.error("Error adding questions to quiz:", error);
+      toastr.error("An error occurred while adding questions to the quiz.");
+    }
+  });
+}
+
+
+function populateQuizzesTable(quizzes) {
+  const tableBody = $('#quizzesTable tbody');
+  tableBody.empty();
+
+  quizzes.forEach(quiz => {
+    const isPublished = quiz.isPublic ? 'checked' : '';
+    const row = `
+          <tr>
+              <td>
+                  <div >${quiz.title}</div>
+              </td>
+              <td>${quiz.categoryName}</td>
+              <td>${quiz.totalQuestions}</td>
+              <td>${quiz.durationMinutes} min</td>
+              <td>
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" ${isPublished} onclick="togglePublish(${quiz.id}, this.checked)">
+                      
+                  </div>
+              </td>
+              <td>
+                  <button class="btn btn-sm me-1" onclick="openQuizModal('edit', ${quiz.id})">
+                      <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="btn btn-sm" onclick="deleteQuiz(${quiz.id})">
+                      <i class="fas fa-trash"></i>
+                  </button>
+                  <button class="btn btn-sm btn-primary" onclick="openAddQuestionsModal(${quiz.id})">
+                      Add Questions
+                  </button>
+              </td>
+          </tr>
+      `;
+    tableBody.append(row);
+  });
+}
+
+function fetchUserList() {
+  $.ajax({
+      url: '/UserQuizHistory/GetAllUsers',
+      type: 'GET',
+      success: function (response) {
+          if (response.isSuccess) {
+              populateUserList(response.data);
+          } else {
+              toastr.warning(response.message || "Failed to fetch users.");
+          }
+      },
+      error: function (error) {
+          console.error("Error fetching user list:", error);
+          toastr.error("An error occurred while fetching the user list.");
+      }
+  });
+}
+
+function populateUserList(users) {
+  const userList = $('#userList');
+  userList.empty();
+
+  users.forEach(user => {
+      const listItem = `
+          <li class="list-group-item d-flex justify-content-between align-items-center" onclick="fetchUserQuizHistory(${user.userId})">
+              ${user.fullname}
+          </li>
+      `;
+      userList.append(listItem);
+  });
+}
+
+function fetchUserQuizHistory(userId) {
+  $.ajax({
+      url: `/UserQuizHistory/GetUserQuizHistory?userId=${userId}`,
+      type: 'GET',
+      success: function (response) {
+          if (response.isSuccess) {
+              populateUserQuizHistoryTable(response.data);
+              toastr.success(response.message || "User quiz history fetched successfully.");
+          } else {
+              $('#userQuizHistoryTableBody').empty();
+              toastr.warning(response.message || "No quiz history found for the user.");
+          }
+      },
+      error: function (error) {
+          console.error("Error fetching user quiz history:", error);
+          toastr.error("An error occurred while fetching user quiz history.");
+      }
+  });
+}
+
+function populateUserQuizHistoryTable(quizHistory) {
+  const tableBody = $('#userQuizHistoryTableBody');
+  tableBody.empty();
+
+  quizHistory.forEach(history => {
+      const row = `
+          <tr>
+              <td>${history.quizTitle}</td>
+              <td>${history.score}</td>
+              <td>${history.timeSpent} minutes</td>
+              <td>${new Date(history.startedAt).toLocaleDateString()}</td>
+          </tr>
+      `;
+      tableBody.append(row);
+  });
 }

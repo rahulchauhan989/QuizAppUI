@@ -15,4 +15,7 @@ public interface ILoginService
     int ExtractUserIdFromToken(string token);
 
     Task<UserProfileViewDto?> GetCurrentUserProfileAsync(string token);
+
+    Task<int> GetUserIdFromToken(string token);
+    string GetUserRoleFromToken(string token);
 }

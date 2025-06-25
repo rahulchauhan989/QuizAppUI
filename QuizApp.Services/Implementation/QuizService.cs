@@ -440,6 +440,22 @@ public class QuizService : IQuizService
         return await _quizRepository.GetPublishedQuizzesAsync();
     }
 
+    public async Task<IEnumerable<QuizDto>> GetPublishedQuizzes()
+    {
+        var quizzes = await _quizRepository.GetPublishedQuizzes();
+
+        return quizzes.Select(quiz => new QuizDto
+        {
+            Id = quiz.Id,
+            Title = quiz.Title,
+            Description = quiz.Description,
+            CategoryName = quiz.Category.Name,
+            Categoryid=quiz.CategoryId,
+            // CreatedAt = quiz.Createdat,
+            Ispublic = quiz.Ispublic ?? false
+        });
+    }
+
     public async Task<List<QuestionDto>> AddExistingQuestionsToQuizAsync(int quizId, List<int> existingQuestionIds)
     {
         var quiz = await _quizRepository.GetQuizByIdAsync(quizId);
@@ -666,8 +682,9 @@ public class QuizService : IQuizService
 
     public async Task<QuizDto?> UpdateQuizAsync(UpdateQuizDto dto)
     {
-        string token = _httpContextAccessor.HttpContext?.Request.Headers["Authorization"].ToString().Replace("Bearer ", "")!;
-        int userId = _loginService.ExtractUserIdFromToken(token);
+        // string token = _httpContextAccessor.HttpContext?.Request.Headers["Authorization"].ToString().Replace("Bearer ", "")!;
+        // int userId = _loginService.ExtractUserIdFromToken(token);
+        int userId=1;
 
         var quiz = await _quizRepository.GetQuizByIdAsync(dto.Id);
         if (quiz == null || quiz.Isdeleted == true)

@@ -8,16 +8,21 @@ namespace QuizApp.Web.Controllers;
 public class QuizSubmissionController : Controller
 {
     private readonly IQuizesSubmission _quizesSubmissionService;
+
+    private readonly ILoginService _loginservice;
+
+    private readonly IHttpContextAccessor _httpContextAccessor;
     private readonly ILogger<QuizSubmissionController> _logger;
 
-    public QuizSubmissionController(ILogger<QuizSubmissionController> logger, IQuizesSubmission quizesSubmissionService
-        )
+    public QuizSubmissionController(ILogger<QuizSubmissionController> logger, IQuizesSubmission quizesSubmissionService, ILoginService loginService, IHttpContextAccessor httpContextAccessor)
     {
         _quizesSubmissionService = quizesSubmissionService;
         _logger = logger;
+        _loginservice = loginService;
+        _httpContextAccessor = httpContextAccessor;
     }
 
-    [HttpPost("search")]
+    [HttpPost]
     [Authorize(Roles = "Admin, User")]
     public async Task<ActionResult<ResponseDto>> SearchQuizzes([FromBody] QuizFilterDto filter)
     {
@@ -43,7 +48,7 @@ public class QuizSubmissionController : Controller
         }
     }
 
-    [HttpGet("{quizId}")]
+    [HttpGet]
     [Authorize(Roles = "Admin, User")]
     public async Task<ActionResult<ResponseDto>> GetQuizWithQuestions(int quizId)
     {
@@ -69,7 +74,7 @@ public class QuizSubmissionController : Controller
         }
     }
 
-    [HttpPost("start")]
+    [HttpPost]
     [Authorize]
     public async Task<ActionResult<ResponseDto>> StartQuiz([FromBody] StartQuizRequest request)
     {
@@ -82,11 +87,14 @@ public class QuizSubmissionController : Controller
             var quiz = await _quizesSubmissionService.GetQuizByIdAsync(request.QuizId);
             var questions = await _quizesSubmissionService.GetQuestionsForQuizAsync(request.QuizId);
 
+            string? token = _httpContextAccessor.HttpContext?.Request.Cookies["jwtToken"];
+            int resolvedUserId = await _loginservice.GetUserIdFromToken(token);
+
             var attemptId = await _quizesSubmissionService.StartQuizAsync(request.UserId, request.QuizId, request.categoryId);
 
             var response = new SubmitQuizRequest
             {
-                UserId = request.UserId,
+                UserId = resolvedUserId,
                 QuizId = request.QuizId,
                 categoryId = request.categoryId,
                 Answers = questions.Select(q => new SubmittedAnswer
@@ -115,12 +123,17 @@ public class QuizSubmissionController : Controller
         }
     }
 
-    [HttpPost("submit")]
+    [HttpPost]
     [Authorize]
     public async Task<ActionResult<ResponseDto>> SubmitQuiz([FromBody] SubmitQuizRequest request)
     {
         try
         {
+            string? token = _httpContextAccessor.HttpContext?.Request.Cookies["jwtToken"];
+            int resolvedUserId = await _loginservice.GetUserIdFromToken(token);
+
+            request.UserId= resolvedUserId;
+            
             var validationResult = await _quizesSubmissionService.ValidateQuizSubmissionAsync(request);
             if (!validationResult.IsValid)
                 return new ResponseDto(false, validationResult.ErrorMessage, null, 400);

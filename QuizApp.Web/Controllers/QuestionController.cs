@@ -184,4 +184,22 @@ public class QuestionController : Controller
             return new ResponseDto(false, "An internal server error occurred.", null, 500);
         }
     }
+
+    [HttpGet]
+    [Authorize(Roles = "Admin, User")]
+    public async Task<ActionResult<ResponseDto>> GetRandomQuestionByQuizIds(int quizId)
+    {
+        try
+        {
+            var questions = await _questionService.GetRandomQuestionsByQuizIdAsync(quizId);
+            return questions != null
+                ? new ResponseDto(true, "Random questions by quiz ID fetched successfully.", questions)
+                : new ResponseDto(false, "No questions found for the specified quiz ID.", null, 404);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error occurred while fetching random questions.");
+            return new ResponseDto(false, "An internal server error occurred.", null, 500);
+        }
+    }
 }

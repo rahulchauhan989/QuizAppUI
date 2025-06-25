@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P7bYfTtzNaqqpMCRqpPlrNgyQw1EOmfHKd9KltonIfo=",
+  "Hash": "JJhL2yZ/aD+hiUq0hqX2gaYxIiQCZfarHewkSFhVing=",
   "Source": "QuizApp.Web",
   "BasePath": "_content/QuizApp.Web",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\bundle\\QuizApp.Web.styles.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\bundle\\QuizApp.Web.styles.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/QuizApp.Web",
       "RelativePath": "QuizApp.Web.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\bundle\\QuizApp.Web.styles.css"
+      "OriginalItemSpec": "d:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\bundle\\QuizApp.Web.styles.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizApp.Web.bundle.scp.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizApp.Web.bundle.scp.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/QuizApp.Web",
       "RelativePath": "QuizApp.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -48,10 +48,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizApp.Web.bundle.scp.css"
+      "OriginalItemSpec": "d:\\Quiiz-master\\QuizApp.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizApp.Web.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\css\\admin-dashboard.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\css\\admin-dashboard.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -68,7 +68,7 @@
       "OriginalItemSpec": "wwwroot\\css\\admin-dashboard.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\css\\login.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\css\\login.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -85,7 +85,7 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\css\\registration.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\css\\registration.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -102,7 +102,7 @@
       "OriginalItemSpec": "wwwroot\\css\\registration.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\css\\site.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\css\\site.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -119,7 +119,7 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\favicon.ico",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\favicon.ico",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -136,7 +136,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\js\\admin-dashboard.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\js\\admin-dashboard.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -153,7 +153,24 @@
       "OriginalItemSpec": "wwwroot\\js\\admin-dashboard.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\js\\site.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\js\\quiz.js",
+      "SourceId": "QuizApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
+      "BasePath": "_content/QuizApp.Web",
+      "RelativePath": "js/quiz.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\quiz.js"
+    },
+    {
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\js\\site.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -170,7 +187,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -187,7 +204,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -204,7 +221,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -221,7 +238,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -238,7 +255,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -255,7 +272,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -272,7 +289,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -289,7 +306,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -306,7 +323,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -323,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -340,7 +357,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -357,7 +374,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -374,7 +391,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -391,7 +408,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -408,7 +425,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -425,7 +442,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -442,7 +459,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -459,7 +476,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -476,7 +493,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -493,7 +510,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -510,7 +527,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -527,7 +544,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -544,7 +561,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -561,7 +578,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -578,7 +595,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -595,7 +612,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -612,7 +629,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -629,7 +646,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -646,7 +663,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -663,7 +680,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -680,7 +697,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -697,7 +714,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -714,7 +731,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -731,7 +748,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -748,7 +765,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -765,7 +782,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -782,7 +799,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -799,7 +816,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -816,7 +833,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -833,7 +850,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -850,7 +867,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -867,7 +884,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -884,7 +901,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -901,7 +918,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -918,7 +935,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -935,7 +952,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -952,7 +969,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -969,7 +986,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -986,7 +1003,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -1003,7 +1020,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -1020,7 +1037,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -1037,7 +1054,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -1054,7 +1071,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -1071,7 +1088,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -1088,7 +1105,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -1105,7 +1122,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",
@@ -1122,7 +1139,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "QuizApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Quiiz-master\\QuizApp.Web\\wwwroot\\",

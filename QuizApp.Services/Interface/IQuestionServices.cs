@@ -16,6 +16,7 @@ public interface IQuestionServices
     Task<List<QuestionDto>> GetRandomQuestionsAsync(int Categoryid, int count);
     Task<int> GetQuestionCountByQuizIdAsync(int quizId);
     Task<List<QuestionDto>> GetRandomQuestionsByQuizIdAsync(int quizId, int count);
+    Task<List<QuestionDto>> GetRandomQuestionsByQuizIdAsync(int quizId);
     Task<bool> IsQuizExistsAsync(int quizId);
     Task<QuestionEditDto?> GetQuestionForEditAsync(int questionId);
     Task<QuestionDto?> EditQuestionAsync(QuestionUpdateDto dto);

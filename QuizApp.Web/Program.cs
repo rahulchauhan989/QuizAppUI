@@ -63,19 +63,18 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             },
             OnForbidden = context =>
             {
-                context.Response.Redirect("/Login/PageNotFond");
+                context.Response.Redirect("/Login/AccessDenied");
                 return Task.CompletedTask;
             }
         };
     });
+    
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

@@ -17,7 +17,25 @@ public class UserQuizHistoryController : Container
         _logger = logger;
     }
 
-    [HttpGet("{userId}")]
+    [HttpGet]
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult<ResponseDto>> GetAllUsers(){
+         try
+        {
+            var data= await _userHistoryService.GetAllUser();
+            return  new ResponseDto(true, "User quiz history fetched successfully.", data);
+            
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error occurred while fetching user quiz history.");
+            return new ResponseDto(false, "An internal server error occurred.", null, 500);
+        }
+    }
+
+
+
+    [HttpGet]
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult<ResponseDto>> GetUserQuizHistory(int userId)
     {

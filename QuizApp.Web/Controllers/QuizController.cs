@@ -53,6 +53,25 @@ public class QuizController : Controller
 
     [HttpGet]
     [Authorize(Roles = "Admin, User")]
+    public async Task<ActionResult<ResponseDto>> GetPublishedQuizze()
+    {
+        try
+        {
+            var quizzes = await _quizService.GetPublishedQuizzes();
+            if (quizzes == null )
+                return Ok(new ResponseDto(false, "No published quizzes found.", null));
+
+            return Ok(new ResponseDto(true, "Published quizzes fetched successfully.", quizzes));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error occurred while fetching published quizzes.");
+            return StatusCode(500, new ResponseDto(false, "An internal server error occurred.", null));
+        }
+    }
+
+    [HttpGet]
+    [Authorize(Roles = "Admin, User")]
     public async Task<ActionResult<ResponseDto>> GetPublishedQuizzes()
     {
         try
@@ -66,6 +85,7 @@ public class QuizController : Controller
             return StatusCode(500, new { success = false, message = "An internal server error occurred." });
         }
     }
+
 
     [HttpPost]
     [Authorize(Roles = "Admin")]
@@ -89,9 +109,9 @@ public class QuizController : Controller
         }
     }
 
-    
 
-    [HttpPost("add-questions")]
+
+    [HttpPost]
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult<ResponseDto>> AddQuestionsToQuiz([FromBody] AddQuestionToQuizDto dto)
     {
@@ -180,7 +200,7 @@ public class QuizController : Controller
         }
     }
 
-    
+
 
     [HttpPut]
     [Authorize(Roles = "Admin")]
@@ -200,9 +220,9 @@ public class QuizController : Controller
         }
     }
 
-    
 
-    [HttpPut("{id}/publish")]
+
+    [HttpPut]
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult<ResponseDto>> PublishQuiz(int id)
     {
@@ -221,7 +241,7 @@ public class QuizController : Controller
         }
     }
 
-    [HttpPut("{id}/unpublish")]
+    [HttpPut]
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult<ResponseDto>> UnpublishQuiz(int id)
     {
@@ -262,7 +282,7 @@ public class QuizController : Controller
         }
     }
 
-    
+
 
 
     [HttpPost("create-quiz")]

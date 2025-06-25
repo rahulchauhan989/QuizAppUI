@@ -85,4 +85,8 @@ public class UserQuizAttemptRepository : IUserQuizAttemptRepository
             .Where(uqa => uqa.CategoryId == categoryId)
             .ToListAsync();
     }
+
+    public async Task<IEnumerable<User>> getAllUser(){
+        return await _context.Users.ToListAsync();
+    }
 }
